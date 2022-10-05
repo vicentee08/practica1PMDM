@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/common_padding"
+            android:paddingStart="@dimen/common_padding"
+            android:paddingEnd="@dimen/common_padding"
+            android:paddingBottom="@dimen/common_padding"
+            android:background="@color/m_0"
+            >
+
+            <ImageView
+                android:id="@+id/imgPortada"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_portada"
+                android:padding="@dimen/common_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo_portada"
+                android:background="@color/white"
+                android:contentDescription="@string/portada"
+                />
+
+            <TextView
+                android:id="@+id/titulo_portada"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/card_portada"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingBottom="@dimen/common_padding"
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding"
+                android:paddingStart="@dimen/common_padding"
+                android:paddingEnd="@dimen/common_padding"
+                android:paddingBottom="@dimen/common_padding"
+                android:background="@color/t_0"
+                >
+
+                <ImageView
+                    android:id="@+id/imgContent1"
+                    android:layout_width="@dimen/card_content_size"
+                    android:layout_height="@dimen/card_content_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/m_50"
+                    android:contentDescription="@string/cantante"
+                    />
+
+                <TextView
+                    android:id="@+id/titulo_nombre1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_title1"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    app:layout_constraintStart_toEndOf="@id/imgContent1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingLeft="@dimen/common_padding"
+                    />
+
+                <TextView
+                    android:id="@+id/card_description1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description1"
+                    app:layout_constraintStart_toEndOf="@id/imgContent1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titulo_nombre1"
+                    android:paddingLeft="@dimen/common_padding"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWiki1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_btn_wiki"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:layout_marginBottom="@dimen/common_margin"
+                    app:layout_constraintTop_toBottomOf="@id/card_description1"
+                    app:layout_constraintEnd_toEndOf="@id/card_description1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:backgroundTint="@color/m_100"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding"
+                android:paddingStart="@dimen/common_padding"
+                android:paddingEnd="@dimen/common_padding"
+                android:paddingBottom="@dimen/common_padding"
+                android:background="@color/t_0"
+                >
+
+                <ImageView
+                    android:id="@+id/imgContent2"
+                    android:layout_width="@dimen/card_content_size"
+                    android:layout_height="@dimen/card_content_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/m_50"
+                    />
+
+                <TextView
+                    android:id="@+id/titulo_nombre2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_title2"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    app:layout_constraintStart_toEndOf="@id/imgContent2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingLeft="@dimen/common_padding"
+                    />
+
+                <TextView
+                    android:id="@+id/card_description2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description2"
+                    app:layout_constraintStart_toEndOf="@id/imgContent2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titulo_nombre2"
+                    android:paddingLeft="@dimen/common_padding"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWiki2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_btn_wiki"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:layout_marginBottom="@dimen/common_margin"
+                    app:layout_constraintTop_toBottomOf="@id/card_description2"
+                    app:layout_constraintEnd_toEndOf="@id/card_description2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:backgroundTint="@color/m_100"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding"
+                android:paddingStart="@dimen/common_padding"
+                android:paddingEnd="@dimen/common_padding"
+                android:paddingBottom="@dimen/common_padding"
+                android:background="@color/t_0"
+                >
+
+                <ImageView
+                    android:id="@+id/imgContent3"
+                    android:layout_width="@dimen/card_content_size"
+                    android:layout_height="@dimen/card_content_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/m_50"
+                    />
+
+                <TextView
+                    android:id="@+id/titulo_nombre3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_title3"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    app:layout_constraintStart_toEndOf="@id/imgContent3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingLeft="@dimen/common_padding"
+                    />
+
+                <TextView
+                    android:id="@+id/card_description3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description3"
+                    app:layout_constraintStart_toEndOf="@id/imgContent3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titulo_nombre3"
+                    android:paddingLeft="@dimen/common_padding"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWiki3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_btn_wiki"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:layout_marginBottom="@dimen/common_margin"
+                    app:layout_constraintTop_toBottomOf="@id/card_description3"
+                    app:layout_constraintEnd_toEndOf="@id/card_description3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:backgroundTint="@color/m_100"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_marginStart="@dimen/common_margin"
+            android:layout_marginEnd="@dimen/common_margin"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding"
+                android:paddingStart="@dimen/common_padding"
+                android:paddingEnd="@dimen/common_padding"
+                android:paddingBottom="@dimen/common_padding"
+                android:background="@color/t_0"
+                >
+
+                <ImageView
+                    android:id="@+id/imgContent4"
+                    android:layout_width="@dimen/card_content_size"
+                    android:layout_height="@dimen/card_content_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/m_50"
+                    />
+
+                <TextView
+                    android:id="@+id/titulo_nombre4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_title4"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    app:layout_constraintStart_toEndOf="@id/imgContent4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingLeft="@dimen/common_padding"
+                    />
+
+                <TextView
+                    android:id="@+id/card_description4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description4"
+                    app:layout_constraintStart_toEndOf="@id/imgContent4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titulo_nombre4"
+                    android:paddingLeft="@dimen/common_padding"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWiki4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_btn_wiki"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:layout_marginBottom="@dimen/common_margin"
+                    app:layout_constraintTop_toBottomOf="@id/card_description4"
+                    app:layout_constraintEnd_toEndOf="@id/card_description4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:backgroundTint="@color/m_100"
+                    />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
